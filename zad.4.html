@@ -1,15 +1,19 @@
 <html>
 <head>
+ <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
 </head>
 <body>
 <h4>Sposoby podłączania styli do strony (skrócone zestawienie).</h4>
+ <br><br>
 1)Zewnętrzny arkusz stylów.
 <.head>
 <.link rel="Stylesheet" type="text/css" href="style.css" />
 <./head>
+ <br><br>
 2)Styl lokalny inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli 
 dopisanie arkusza do wybranego bloku treści strony.
 <.selektor style="cecha1: wartość1; cecha2: wartość2...">...</.selektor>
+ <br><br>
 3)Wewnętrzny arkusz stylów.
 <.head>
  <.style type="text/css">
@@ -17,12 +21,14 @@ dopisanie arkusza do wybranego bloku treści strony.
  selektor2 { cecha: wartość; cecha2: wartość2... }
  <./style>
 <./head>
+ <br><br>
 4)Alternatywny arkusz stylów.
 <.head>
 <.link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
 <.link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
 <.link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
 <./head>
+ <br><br>
 5)Import arkusza stylów.
 <.style type="text/css">
  @import url(adres zewnętrznego arkusza stylów);
