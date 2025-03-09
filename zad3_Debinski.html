@@ -4,7 +4,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <table border=2px>
+        <table style="border:2px solid black">
             <tr>
                 <td colspan="2">Cechy możliwości formatowania w:</td>
             </tr>
@@ -31,43 +31,34 @@
             
         <h2>Nowe możliwości CSS</h2>
         <ol type="1">
-            <li><b>Przestarzałe atrybuty i znaczniki</b>, znajdujące się bezpośrednio w składni HTML, które
-                dotyczą formatowania (elementy zdeprecjonowane), będą stopniowo wycofywane przez
-                producentów przeglądarek internetowych, na rzecz rekomendowanych analogicznych
-                deklaracji CSS.
+            <li>Programy pisane z wykorzystaniem arkuszy stylów są zwykle bardziej przejrzyste i krótsze</li><br>
+
+            <li>Przez polecenie "style" nie trzeba latac po całym kodzie by zmnieniac wygląd można to zrobić w jendym miejscu</li><br>
+
+            <li> Dzięki możliwości stosowania klas selektorów znacznie zmniejszamy ilość pisania
+                 określamy wszystkie atrybuty formatowania w jednym miejscu 
+                odnoszące się do wielu elementów które mają wyglądać tak samo, wystarczy podać tylko nazwę klasy przy
+                danym elemencie i nie musimy już wypisywać dużej ilości
+                poleceń, przyspiesza to późniejszą modyfikację strony gdyż zmian
+                dokonujemy tylko w jednym miejscu a wpływają one na wiele elementów jednocześnie
             </li><br>
 
-            <li>Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej przejrzyste i krótsze</li><br>
+            <li>Możliwość stosowania różnorodnych jednostek oraz sposobów definiowania kolorów</li><br>
 
-            <li>Style pozwalają w łatwy sposób zarządzać całą serią dokumentów, poprzez stosowanie zewnętrznych arkuszy stylów</li><br>
+            <li>Różne wartości pogrubienia czcionki (aż 9 opcji)</li><br>
 
-            <li> Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. W
-                jednym miejscu określamy wszystkie atrybuty formatowania (których może być bardzo
-                dużo), odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy
-                elemencie wystarczy podać tylko nazwę klasy i nie musimy już wypisywać dużej ilości
-                poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian
-                dokonujemy tylko w jednym miejscu, a wpływają one na wiele elementów jednocześnie.
-            </li><br>
-
-            <li>Możliwość stosowania różnorodnych jednostek oraz sposobów definiowania kolorów.</li><br>
-
-            <li>Różne wartości pogrubienia czcionki (9 rodzajów)</li><br>
+            <li>Ciekawe opcje graficzne</li><br>
 
             <li>Dodatkowe możliwości formatowania tekstu</li><br>
-
-            <li>Efektowne filtry graficzne</li><br>
-
-            <li>Dodatkowe możliwości określenia wyglądu dokumentów podczas ich drukowania</li><br>
-
         </ol>
             
         <h2>Wady CSS</h2>
         <ol>
+            <li>brak pokazywania błędów podczas pisania styli CSS oraz podczas ich wykonywania</li>
+            
             <li>złożona specyfikacja (składnia) nietolerująca, rzadnych błędów składniowych</li>
 
-            <li>brak sygnalizacji błędów podczas wykonywania styli CSS oraz podczas ich realizacji</li>
-
-            <li>błędne obsługiwanie CSS przez różne przeglądarki</li>
+            <li>nipoprawne interpretowanie CSSa przez różne przeglądarki</li>
         </ol>
     </body>
 </html>
