@@ -1,0 +1,38 @@
+<html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html">
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1><b><u>Wewnętrzny arkusz stylów</u></b></h1>
+    <ol type="1">
+        <li>
+            <h1><b>Gdzie jest wstawiany wewnętrzny arkusz stylów?</b></h1>
+            Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami < head> a < /head>). Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż domyślne)
+        </li>
+
+        <li>
+            <h1><b>Składnia teoretyczna</b></h1>
+            <table style="border:2px solid black">
+                <tr>
+
+                    <td>
+                        < head> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(...) <br>
+                            <b>&nbsp;&nbsp;< style type="text/css"> <br>
+                            &nbsp;&nbsp;/* < ![CDATA[ */</b><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selektor1 { cecha: wartość; cecha2: wartość2... } <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selektor2 { cecha: wartość; cecha2: wartość2... } <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(...) <br>
+                            &nbsp;&nbsp;<b> /* ]]> */ <br>
+                            &nbsp;&nbsp;< /style> </b><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(...) <br>
+                            < /head><br>
+                    </td>
+
+                </tr>
+            </table>
+        </li>
+    </ol>
+</body>
+</html>
